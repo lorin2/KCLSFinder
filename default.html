@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Google Maps Sample</title>
+    <!-- WinJS references -->
+    <link rel="stylesheet" type="text/css" href="winjs/css/ui-light.css" />
+    <script src="winjs/js/base.js"></script>
+    <script src="winjs/js/ui.js"></script>
+    <script src="winjs/js/binding.js"></script>
+    <script src="winjs/js/controls.js"></script>
+    <script src="winjs/js/animations.js"></script>
+    <script src="winjs/js/wwaapp.js"></script>
+    <!-- KCLS Finder references -->
+    <link rel="stylesheet" href="css/default.css" />
+    <script src="/js/default.js"></script>
+    <script src="/js/notifications.js"></script>
+</head>
+<body>
+    <div id="panel">
+        <img id="panelLogo" src="images/Library_Finder_panel_logo.png" width="200" alt="KCLS logo" />
+        <div id="textDisplay">
+        </div>
+    </div>
+    <!-- Render the map in an iframe. -->
+    <div id="mapSection">
+        <iframe id="mapIframe" src="ms-wwa-web:///map.html"></iframe>
+    </div>
+    <!-- BEGINTEMPLATE: Template code for a standard Bottom Command AppBar -->
+    <!-- For a typical App Bar, set transient:true and lightdismiss:true -->
+    <div id="standardAppBar" data-win-control="WinJS.UI.AppBar" aria-label="Command Bar"
+        data-win-options="{position:'bottom',transient:true,autoHide:0,lightDismiss:true}">
+        <div class="win-left hideWhenSnapped">
+            <button id="myLocation" class="win-command">
+                <span class="win-commandicon win-large">&#xE07B</span><span class="win-label">My location</span>
+            </button>
+            <button id="showAllLibraries" class="win-command">
+                <span class="win-commandicon win-large">&#xF026</span><span class="win-label">Show all
+                    libraries</span>
+            </button>
+            <button id="toggleTraffic" class="win-command" aria-haspopup="true">
+                <span class="win-commandicon win-large">&#x26DF</span><span class="win-label">Toggle
+                    traffic</span>
+            </button>
+            <div style="width:80px" id="toggleTrafficFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Select toggle flyout}">
+                <div id="toggle" class="verticalStacking" data-win-control="WinJS.UI.Toggle"
+                    data-win-options="{title: 'Traffic layer', checked: false}">
+                </div>
+            </div>
+            <button class="win-command" id="selectLibrary" aria-haspopup="true">
+                <span class="win-spritestates win-commandicon win-large">&#xE113</span> <span class="win-label">
+                    Default library</span>
+            </button>
+            <div id="libraryListFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Select library flyout}">
+                <label for="libraryLocation">
+                    Library</label>
+                <br />
+                <select id="libraryLocation">
+                    <option value="0">(none)</option>
+                    <option value="1">Bellevue</option>
+                    <option value="2">Kirkland</option>
+                    <option value="3">Redmond</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- ENDTEMPLATE -->
+</body>
+</html>

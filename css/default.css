@@ -1,0 +1,37 @@
+﻿body
+{
+    margin: 0;
+}
+
+#panel
+{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #2E2A2B;
+}
+#panelLogo
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#textDisplay
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #dbcfcf;
+}
+
+#mapSection
+{
+    float: left;
+    width: 75%;
+    height: 100%;
+}
+
+#mapIframe
+{
+    width: 100%;
+    height: 100%;
+}

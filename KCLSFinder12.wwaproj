@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{963234e5-2991-4268-9d82-f3eda4b04e92}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\4.0\Microsoft.VisualStudioVersion.v11.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.props" />
+  <PropertyGroup>
+    <DefaultLanguage>en-US</DefaultLanguage>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest" />
+    <Content Include="css\default.css" />
+    <Content Include="default.html" />
+    <Content Include="images\book.png" />
+    <Content Include="images\compass_rose.png" />
+    <Content Include="images\custom.png" />
+    <Content Include="images\large_book.png" />
+    <Content Include="images\Library_Finder_panel_logo.png" />
+    <Content Include="images\Library_Finder_splash_screen.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\medium_book.png" />
+    <Content Include="images\myLocation.png" />
+    <Content Include="images\pin.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\small_book.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\stoplight.png" />
+    <Content Include="images\stoplight2.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="images\unpin.png" />
+    <Content Include="images\widelogo.png" />
+    <Content Include="js\default.js" />
+    <Content Include="js\libraryCollection.js" />
+    <Content Include="js\map.js" />
+    <Content Include="js\notifications.js" />
+    <Content Include="map.html" />
+    <Content Include="winjs\Css\ui-dark.css" />
+    <Content Include="winjs\Css\ui-light.css" />
+    <Content Include="winjs\js\animations.js" />
+    <Content Include="winjs\js\base.js" />
+    <Content Include="winjs\js\binding.js" />
+    <Content Include="winjs\js\controls.js" />
+    <Content Include="winjs\js\res.js" />
+    <Content Include="winjs\js\ui.js" />
+    <Content Include="winjs\js\uicollections.js" />
+    <Content Include="winjs\js\wwaapp.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WWAProject\Microsoft.VisualStudio.WWAProject.targets" />
+</Project>

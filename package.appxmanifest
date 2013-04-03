@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="9e966fb7-da6e-4364-9f96-92c6acaef586" Version="1.0.0.0" Publisher="CN=lorincat" />
+  <Properties>
+    <DisplayName>KCLSFinder</DisplayName>
+    <Description>KCLSFinder02</Description>
+    <PublisherDisplayName>lorincat</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-US" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="Library Finder" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="KCLS Library Finder v0.1" ForegroundText="light" BackgroundColor="#2E2A2B" InitialRotationPreference="portrait" ToastCapable="true">
+        <DefaultTile ShowName="true" WideLogo="images\widelogo.png" />
+        <SplashScreen Image="images\Library_Finder_splash_screen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
